@@ -3,29 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Huvudmeny</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-      <header>
-          <h1 id="Upp">Namn på Resturangen</h1>
-          <nav>
-            <ul>
-              <li>
-                <a href="#Pasta">Pasta</a>
-              </li>
-              <li>
-                <a href="#Pizza">Pizza</a>
-              </li>
-              <li>
-                <a href="#Rullar">Rullar</a>
-              </li>
-              <li>
-                <a href="#Vegetariskt/Salader">Vegetariskt</a>
-              </li>
-            </ul>
-          </nav>
-      </header>
+    <header>
+      <div class="title">
+        <h1 id="Upp">Namn på Resturangen</h1>
+      </div>
+    </header>
+
+    <label class="nav-area">
+      ☰
+      <input class="nav-toggle" type="checkbox" />
+      <nav>
+        <ul>
+          <li>
+            <a href="Pasta.html"><i class="fas fa-italic"></i></a>
+          </li>
+          <p class="Ord">Pasta</p>
+          <li>
+            <a href="Pizza.html"><i class="fas fa-pizza-slice"></i></a>
+          </li>
+          <p class="Ord">Pizza</p>
+          <li>
+            <a href="Hamburgare.html"><i class="fas fa-hamburger"></i></a>
+          </li>
+          <p class="Ord">Hamburgare</p>
+          <li>
+            <a href="Vegetariskt.html"><i class="fas fa-seedling"></i></a>
+          </li>
+          <p class="Ord">Vegetariskt</p>
+        </ul>
+      </nav>
+    </label>
+    <main>
+      <aside>
+        <p>
+          Välkommen till resturang ......... . Här serveras en stor variation av
+          maträtter som kan ätas på plats eller ta med, det finns även möjlighet
+          att skickas till din framdörr.
+        </p>
+        <p>Telefon nummer: 1234567890</p>
+        <p>Address: Crafoordsväg 12</p>
+      </aside>
+      <div class="vanliga-grid">
+        <div class="vanliga-card">
+          <img src="Bildinomhus.jpg" alt="Bild på disken" width="600" />
+        </div>
+        <div class="vanliga-card">
+          <img src="arbetare1.jpg" alt="Bild på arbetare" width="200" />
+        </div>
+        <div class="vanliga-card">
+          <img src="bildinomhusx.jpg" alt="Bild på sittplats" width="600" />
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <li>
+        <a href="#Upp">Gå upp</a>
+      </li>
+    </footer>
   </body>
 </html>
