@@ -59,6 +59,11 @@ a:hover {
   color: red;
 }
 
+div.fixed {
+  position: fixed;
+  bottom: 10px;
+}
+
 ul a {
   list-style-type: none;
   margin: 0;
