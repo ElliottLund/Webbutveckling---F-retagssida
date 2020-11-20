@@ -66,6 +66,32 @@ footer {
   text-align: center;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ace894;
+  font-family: arial;
+}
+
+li {
+  float: left;
+  width: 100%;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 1%;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+li a:hover {
+  background-color: #333;
+}
+
 :root {
   --dark: #1a090d;
   --purp: #4a314d;
