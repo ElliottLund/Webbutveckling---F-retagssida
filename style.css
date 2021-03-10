@@ -6,13 +6,8 @@
 
 .Ord {
   font-size: 0.5cm;
-  margin-top: -90px;
+  margin-top: -80px;
   color: a8ba9a;
-}
-
-.Startsida {
-  font-size: 0.5cm;
-  margin-top: -300px;
 }
 
 .title {
@@ -23,6 +18,7 @@
 h1 {
   color: #1a090d;
   align-items: center;
+  font-family: Lucida handwriting;
 }
 
 body {
@@ -34,7 +30,7 @@ body {
 header {
   font-family: "Roboto Slab", serif;
   padding: 24px;
-  background-color: var(--signal);
+  background-color: red;
   color: Black;
 }
 
@@ -56,7 +52,7 @@ a {
 
 a:hover {
   background-color: #ffffff;
-  color: red;
+  color: black;
 }
 
 .fixed {
@@ -69,7 +65,7 @@ ul a {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #ace894;
+  background-color: red;
   font-family: arial;
   text-align: center;
 }
@@ -88,7 +84,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #ace894;
+  background-color: white;
 }
 
 :root {
@@ -140,7 +136,7 @@ nav {
   width: 15vw;
   height: 100vh;
   transition: 600ms ease-in-out;
-  background-color: var(--signal);
+  background-color: red;
   box-shadow: 0 1rem 1rem var(--dark);
 }
 
@@ -204,6 +200,16 @@ main p + P {
   gap: 1rem;
   justify-content: center;
   margin-bottom: 35px;
+  font-family: "Lucida Console";
+}
+
+.vego-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 35px;
+  font-family: "Lucida Console";
 }
 
 .pizza-card {
@@ -216,6 +222,7 @@ main p + P {
   border: 1px solid #333;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  font-family: "Lucida Console";
 }
 
 .vanliga-grid {
@@ -223,6 +230,7 @@ main p + P {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  font-family: "Lucida Console";
 }
 .vanliga-card {
   width: 1000px;
@@ -230,4 +238,14 @@ main p + P {
   flex-direction: column;
   align-items: center;
   padding: 0.5rem;
+}
+
+.adress {
+  position: fixed;
+  left: 1400px;
+  top: 2px;
+}
+
+.fa-map-marked-alt {
+  font-size: 5rem;
 }
