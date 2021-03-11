@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -241,11 +241,89 @@ main p + P {
 }
 
 .adress {
-  position: fixed;
-  left: 1400px;
-  top: 2px;
+  border: 1px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+.startsidaicon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+
+.pastaicon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+
+.hamburgareicon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 300px;
+}
+
+.pizzaicon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 9px;
+  left: 500px;
+}
+
+.vegoicon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 700px;
+}
+
+.pastaiconh {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 300px;
 }
 
 .fa-map-marked-alt {
   font-size: 5rem;
+}
+
+.fa-house-user {
+  font-size: 4rem;
+}
+
+/* 
+Beroende på skärmstorlek
+*/
+.horizontal-menu {
+  display: none;
+  left: 700px;
+  top: 2px;
+}
+
+.buger-menu {
+  display: block;
+}
+
+@media (min-width: 2000px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .horizontal-menu {
+    display: block;
+  }
 }
