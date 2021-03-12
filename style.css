@@ -32,7 +32,6 @@ header {
   padding: 30px;
   background-color: red;
   color: Black;
-  align-items: center;
 }
 
 div {
@@ -241,6 +240,14 @@ main p + P {
   padding: 0.5rem;
 }
 
+.ovanliga-card {
+  width: 1000px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+
 .adress {
   border: 1px;
   width: 50px;
@@ -356,6 +363,22 @@ Beroende på skärmstorlek
   display: none;
 }
 
+.tider-card {
+  display: none;
+  width: 350px;
+  height: 350px;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #333;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: "Lucida Console";
+  position: absolute;
+  top: 100px;
+  right: 10px;
+}
+
 @media (min-width: 1800px) {
   .burger-menu {
     display: none;
@@ -363,6 +386,12 @@ Beroende på skärmstorlek
 
   .horizontal-menu {
     display: block;
+  }
+}
+
+@media (min-width: 1600px) {
+  .tider-card {
+    display: flex;
   }
 }
 
@@ -382,28 +411,12 @@ Beroende på skärmstorlek
   }
 }
 
-@media (min-width: 2000px) {
-  .tider-card {
+@media (max-width: 430px) {
+  .vanliga-card {
     display: none;
   }
-}
 
-.tider-card {
-  display: block;
-}
-
-.tider-card {
-  width: 350px;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  border: 1px solid #333;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  font-family: "Lucida Console";
-  position: absolute;
-  top: 100px;
-  right: 10px;
+  .ovanliga-card {
+    display: flex;
+  }
 }
