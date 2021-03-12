@@ -29,9 +29,10 @@ body {
 
 header {
   font-family: "Roboto Slab", serif;
-  padding: 24px;
+  padding: 30px;
   background-color: red;
   color: Black;
+  align-items: center;
 }
 
 div {
@@ -51,7 +52,7 @@ a {
 }
 
 a:hover {
-  background-color: #ffffff;
+  background-color: red;
   color: black;
 }
 
@@ -247,54 +248,87 @@ main p + P {
   position: absolute;
   top: 10px;
   right: 50px;
+  display: block;
 }
 
 .startsidaicon {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 10px;
-  left: 100px;
+  top: 6px;
+  left: 125px;
+  font-family: Lucida handwriting;
+  font-size: 1.3rem;
 }
 
 .pastaicon {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 10px;
-  left: 100px;
+  top: 6px;
+  left: 125px;
+  font-family: Lucida handwriting;
+  font-size: 1.3rem;
 }
 
 .hamburgareicon {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 10px;
+  top: 6px;
   left: 300px;
+  font-family: Lucida handwriting;
+  font-size: 1.2rem;
 }
 
 .pizzaicon {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 9px;
+  top: 6px;
   left: 500px;
+  font-family: Lucida handwriting;
+  font-size: 1.3rem;
 }
 
 .vegoicon {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 10px;
-  left: 700px;
+  top: 6px;
+  left: 650px;
+  font-family: Lucida handwriting;
+  font-size: 1.3rem;
 }
 
 .pastaiconh {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 10px;
+  top: 6px;
   left: 300px;
+  font-family: Lucida handwriting;
+  font-size: 1.3rem;
+}
+
+.hamburgareiconp {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 6px;
+  left: 480px;
+  font-family: Lucida handwriting;
+  font-size: 1.2rem;
+}
+
+.hamburgareiconv {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 6px;
+  left: 650px;
+  font-family: Lucida handwriting;
+  font-size: 1.2rem;
 }
 
 .fa-map-marked-alt {
@@ -302,7 +336,7 @@ main p + P {
 }
 
 .fa-house-user {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 /* 
@@ -318,7 +352,11 @@ Beroende på skärmstorlek
   display: block;
 }
 
-@media (min-width: 2000px) {
+.burger-menu-small {
+  display: none;
+}
+
+@media (min-width: 1800px) {
   .burger-menu {
     display: none;
   }
@@ -326,4 +364,46 @@ Beroende på skärmstorlek
   .horizontal-menu {
     display: block;
   }
+}
+
+@media (max-width: 1100px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .burger-menu-small {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .adress {
+    display: none;
+  }
+}
+
+@media (min-width: 2000px) {
+  .tider-card {
+    display: none;
+  }
+}
+
+.tider-card {
+  display: block;
+}
+
+.tider-card {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #333;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: "Lucida Console";
+  position: absolute;
+  top: 100px;
+  right: 10px;
 }
