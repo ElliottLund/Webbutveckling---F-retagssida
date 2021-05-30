@@ -1,13 +1,25 @@
 * {
-  margin: auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul p {
+  color: white;
+}
+
+:root {
+  --dark: #1a090d;
+  --purp: #4a314d;
+  --mid: #6b6570;
+  --light: #a8ba9a;
+  --signal: #ace894;
 }
 
 .Ord {
   font-size: 0.5cm;
   margin-top: -80px;
-  color: a8ba9a;
+  color: #fff;
 }
 
 .title {
@@ -16,7 +28,7 @@
 }
 
 h1 {
-  color: #1a090d;
+  color: white;
   align-items: center;
   font-family: Lucida handwriting;
 }
@@ -30,8 +42,8 @@ body {
 header {
   font-family: "Roboto Slab", serif;
   padding: 30px;
-  background-color: red;
-  color: Black;
+  background-color: #262626;
+  color: #262626;
 }
 
 div {
@@ -43,21 +55,28 @@ nav li {
   display: inline-block;
   margin-right: 0px;
 }
-
+/*
+Mapshortcut
+*/
 a {
   font-family: "Roboto Slab", serif;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
-a:hover {
-  background-color: red;
-  color: black;
-}
-
+/*
+Footer
+*/
 .fixed {
+  background-color: #262626;
   position: fixed;
   bottom: 0px;
+  color: white;
+}
+
+.fixed:hover {
+  background-color: white;
+  color: #262626;
 }
 
 ul a {
@@ -65,7 +84,6 @@ ul a {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: red;
   font-family: arial;
   text-align: center;
 }
@@ -73,32 +91,10 @@ ul a {
 li a {
   float: left;
   width: 100%;
-}
-
-li a {
   display: block;
-  color: white;
   padding: 1%;
   text-decoration: none;
   font-size: 100%;
-}
-
-li a:hover {
-  background-color: white;
-}
-
-:root {
-  --dark: #1a090d;
-  --purp: #4a314d;
-  --mid: #6b6570;
-  --light: #a8ba9a;
-  --signal: #ace894;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -122,6 +118,10 @@ body {
   border: 2px solid var(--dark);
 }
 
+aside {
+  align-content: center;
+}
+
 .nav-area {
   position: fixed;
   top: 1vw;
@@ -136,12 +136,8 @@ nav {
   width: 15vw;
   height: 100vh;
   transition: 600ms ease-in-out;
-  background-color: red;
+  background-color: black;
   box-shadow: 0 1rem 1rem var(--dark);
-}
-
-aside {
-  align-content: center;
 }
 
 nav ul {
@@ -158,10 +154,6 @@ nav a {
   color: var(--light);
   text-decoration: none;
   transition: filter 600ms ease-out;
-}
-
-nav a:hover {
-  filter: hue-rotate(180deg);
 }
 
 .nav-toggle {
@@ -200,7 +192,7 @@ main p + P {
   gap: 1rem;
   justify-content: center;
   margin-bottom: 35px;
-  font-family: "Lucida Console";
+  font-family: "sans-serif";
 }
 
 .vego-grid {
@@ -209,7 +201,7 @@ main p + P {
   gap: 1rem;
   justify-content: center;
   margin-bottom: 35px;
-  font-family: "Lucida Console";
+  font-family: sans-serif;
 }
 
 .pizza-card {
@@ -218,11 +210,10 @@ main p + P {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
   border: 1px solid #333;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  font-family: "Lucida Console";
+  font-family: "sans-serif";
 }
 
 .vanliga-grid {
@@ -230,10 +221,9 @@ main p + P {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  font-family: "Lucida Console";
+  font-family: "sans-serif";
 }
 .vanliga-card {
-  width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -262,7 +252,7 @@ main p + P {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 6px;
+  top: 15px;
   left: 125px;
   font-family: Lucida handwriting;
   font-size: 1.3rem;
@@ -355,14 +345,6 @@ Beroende på skärmstorlek
   top: 2px;
 }
 
-.buger-menu {
-  display: block;
-}
-
-.burger-menu-small {
-  display: none;
-}
-
 .tider-card {
   display: none;
   width: 350px;
@@ -370,7 +352,6 @@ Beroende på skärmstorlek
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  border: 1px solid #333;
   margin-bottom: 1rem;
   margin-top: 1rem;
   font-family: "Lucida Console";
@@ -380,12 +361,16 @@ Beroende på skärmstorlek
 }
 
 @media (min-width: 1800px) {
-  .burger-menu {
+  .container {
     display: none;
   }
 
   .horizontal-menu {
     display: block;
+  }
+
+  .burger-menu {
+    display: none;
   }
 }
 
@@ -395,12 +380,22 @@ Beroende på skärmstorlek
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1800px) {
+  .container {
+    display: block;
+  }
+
   .burger-menu {
     display: none;
   }
+}
 
-  .burger-menu-small {
+@media (max-width: 1250px) {
+  .container {
+    display: none;
+  }
+
+  .burger-menu {
     display: block;
   }
 }
@@ -419,4 +414,103 @@ Beroende på skärmstorlek
   .ovanliga-card {
     display: flex;
   }
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+}
+
+.navbar {
+  width: 300px;
+  height: 100%;
+  background-color: #262626;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 20% 0 0;
+  transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+.change {
+  left: 0;
+}
+
+.hamburger-menu {
+  width: 35px;
+  height: 30px;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  height: 3px;
+  background-color: white;
+  transition: all 0.8s;
+}
+
+.change .line-1 {
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.nav-list {
+  text-align: right;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #eee;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 0;
+}
+
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: chocolate;
+  position: absolute;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.nav-link::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.nav-link::before {
+  top: 0;
+  transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  transform: scaleX(1);
 }

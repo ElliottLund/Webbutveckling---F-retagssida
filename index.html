@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
     <title>Huvudmeny</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="grid.css" />
@@ -26,30 +27,63 @@
         </a>
       </div>
     </header>
-    <div class="burger-menu-small">
+
+    <div class="container">
+      <nav class="navbar">
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <ul class="nav-ist">
+          <li class="nav-item">
+            <a href="Pasta.html" class="nav-link"
+              ><img src="Pasta2.png" alt="" width="50"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="Pizza.html" class="nav-link"
+              ><img src="pizza.png" alt="" width="50"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="Hamburgare.html" class="nav-link"
+              ><img src="burger.png" alt="" width="50"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="Vegetariskt.html" class="nav-link"
+              ><img src="vegetable.png" alt="" width="50"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="burger-menu">
       <label class="nav-area">
-        ☰
+        ⚪
         <input class="nav-toggle" type="checkbox" />
         <nav>
           <ul>
             <li>
-              <a href="Pasta.html">
-                <img src="Pasta2.png" alt="Bild på pasta" width="50"
+              <a href="pasta.html">
+                <img src="Pasta2.png" alt="Bild på pasta" width="40"
               /></a>
             </li>
             <li>
               <a href="Pizza.html"
-                ><img src="pizza.png" alt="bild på piza" width="50"
+                ><img src="pizza.png" alt="bild på piza" width="30"
               /></a>
             </li>
             <li>
               <a href="Hamburgare.html"
-                ><img src="burger.png" alt="hamburare" width="50"
+                ><img src="burger.png" alt="hamburare" width="30"
               /></a>
             </li>
             <li>
               <a href="Vegetariskt.html"
-                ><img src="vegetable.png" alt="bild på grönsak" width="50"
+                ><img src="vegetable.png" alt="bild på grönsak" width="30"
               /></a>
             </li>
           </ul>
@@ -57,40 +91,6 @@
       </label>
     </div>
 
-    <div class="burger-menu">
-      <label class="nav-area">
-        ☰
-        <input class="nav-toggle" type="checkbox" />
-        <nav>
-          <ul>
-            <li>
-              <a href="Pasta.html">
-                <img src="Pasta2.png" alt="Bild på pasta" width="50"
-              /></a>
-            </li>
-            <p class="Ord">Pasta</p>
-            <li>
-              <a href="Pizza.html"
-                ><img src="pizza.png" alt="bild på piza" width="50"
-              /></a>
-            </li>
-            <p class="Ord">Pizza</p>
-            <li>
-              <a href="Hamburgare.html"
-                ><img src="burger.png" alt="hamburare" width="50"
-              /></a>
-            </li>
-            <p class="Ord">Hamburgare</p>
-            <li>
-              <a href="Vegetariskt.html"
-                ><img src="vegetable.png" alt="bild på grönsak" width="50"
-              /></a>
-            </li>
-            <p class="Ord">Vegetariskt</p>
-          </ul>
-        </nav>
-      </label>
-    </div>
     <div class="horizontal-menu">
       <ul>
         <div class="pastaicon">
@@ -119,7 +119,6 @@
         </div>
       </ul>
     </div>
-
     <main>
       <div class="tider-card">
         <p>Öppetider</p>

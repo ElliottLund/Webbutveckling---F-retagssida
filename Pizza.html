@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+
     <title>Pizza</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="grid.css" />
@@ -26,28 +28,62 @@
       </div>
     </header>
 
-    <div class="burger-menu-small">
+    <div class="container">
+      <nav class="navbar">
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"
+              ><i class="fas fa-house-user"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="Pasta.html" class="nav-link"
+              ><img src="Pasta2.png" alt="" width="50"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="Hamburgare.html" class="nav-link"
+              ><img src="burger.png" alt="" width="50"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="Vegetariskt.html" class="nav-link"
+              ><img src="vegetable.png" alt="" width="50"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="burger-menu">
       <label class="nav-area">
-        ☰
+        ⚪
         <input class="nav-toggle" type="checkbox" />
         <nav>
           <ul>
             <li>
-              <a href="index.html"><i class="fas fa-house-user"></i></a>
+              <a href="index.html">
+                <i class="fas fa-house-user"></i>
+              </a>
             </li>
             <li>
-              <a href="Pasta.html">
-                <img src="Pasta2.png" alt="Bild på pasta" width="50"
+              <a href="Pasta.html"
+                ><img src="Pasta2.png" alt="bild på Pasta" width="30"
               /></a>
             </li>
             <li>
               <a href="Hamburgare.html"
-                ><img src="burger.png" alt="hamburare" width="50"
+                ><img src="burger.png" alt="hamburare" width="30"
               /></a>
             </li>
             <li>
               <a href="Vegetariskt.html"
-                ><img src="vegetable.png" alt="bild på grönsak" width="50"
+                ><img src="vegetable.png" alt="bild på grönsak" width="30"
               /></a>
             </li>
           </ul>
@@ -55,38 +91,6 @@
       </label>
     </div>
 
-    <div class="burger-menu">
-      <label class="nav-area">
-        ☰
-        <input class="nav-toggle" type="checkbox" />
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html"><i class="fas fa-house-user"></i></a>
-            </li>
-            <p class="Ord">Startsida</p>
-            <li>
-              <a href="Pasta.html">
-                <img src="Pasta2.png" alt="Bild på pasta" width="50"
-              /></a>
-            </li>
-            <p class="Ord">Pasta</p>
-            <li>
-              <a href="Hamburgare.html"
-                ><img src="burger.png" alt="hamburare" width="50"
-              /></a>
-            </li>
-            <p class="Ord">Hamburgare</p>
-            <li>
-              <a href="Vegetariskt.html"
-                ><img src="vegetable.png" alt="bild på grönsak" width="50"
-              /></a>
-            </li>
-            <p class="Ord">Vegetariskt</p>
-          </ul>
-        </nav>
-      </label>
-    </div>
     <div class="horizontal-menu">
       <ul>
         <div class="startsidaicon">
@@ -144,39 +148,47 @@
           iure, numquam dicta magni.
         </p>
         <div class="pizza-card">
-          <img src="012A5238-1.jpg" alt="Bild på kebab pizza" width="300" />
+          <img src="1kebab.jpg.png" alt="Bild på kebab pizza" width="300" />
           <p>100 kr</p>
           <p>
-            En klassisk kebab pizza med tomater, vitlökssås, salad och jalapeño
+            En klassisk kebab pizza med tomater, vitlökssås, salad och jalapeño.
           </p>
         </div>
         <div class="pizza-card">
-          <img src="vesuvio.jpg" alt="Bild på en vesuvio pizza" width="300" />
+          <img
+            src="fraxvesuvio.jpg"
+            alt="Bild på en vesuvio pizza"
+            width="370"
+          />
           <p>100 kr</p>
           <p>En klassisk vesuvio pizza med ost och skinka</p>
         </div>
         <div class="pizza-card">
           <img
-            src="margarita.jpeg"
+            src="margarita1.jpg"
             alt="Bild på en margarita pizza"
-            width="300"
+            width="370"
           />
           <p>100 kr</p>
           <p>En klassisk margarita pizza med ost, tomater och basilika</p>
         </div>
         <div class="pizza-card">
-          <img src="funghi.jpg" alt="Bild på en funghi pizza" width="300" />
+          <img
+            src="Pizza-Funghi2.jpg"
+            alt="Bild på en funghi pizza"
+            width="300"
+          />
           <p>100 kr</p>
           <p>Funghi pizza med svamp</p>
         </div>
         <div class="pizza-card">
-          <img src="Hawaii.jpg" alt="Bild på en hawaii pizza" width="300" />
+          <img src="ananas.jpg" alt="Bild på en hawaii pizza" width="370" />
           <p>100 kr</p>
           <p>Hawaiipizza med annanas</p>
         </div>
         <div class="pizza-card">
           <img
-            src="quattroformagi.jpg"
+            src="4ostar1.jpg"
             alt="Bild på en quattro formagi pizza"
             width="300"
           />

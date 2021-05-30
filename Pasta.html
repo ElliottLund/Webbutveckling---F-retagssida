@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+
     <title>Pasta</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="grid.css" />
@@ -27,9 +29,41 @@
       </div>
     </header>
 
-    <div class="burger-menu-small">
+    <div class="container">
+      <nav class="navbar">
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <ul class="nav-ist">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"
+              ><i class="fas fa-house-user"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="Pizza.html" class="nav-link"
+              ><img src="pizza.png" alt="" width="50"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="Hamburgare.html" class="nav-link"
+              ><img src="burger.png" alt="" width="50"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="Vegetariskt.html" class="nav-link"
+              ><img src="vegetable.png" alt="" width="50"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="burger-menu">
       <label class="nav-area">
-        ☰
+        ⚪
         <input class="nav-toggle" type="checkbox" />
         <nav>
           <ul>
@@ -38,17 +72,17 @@
             </li>
             <li>
               <a href="Pizza.html"
-                ><img src="pizza.png" alt="bild på piza" width="50"
+                ><img src="pizza.png" alt="bild på piza" width="30"
               /></a>
             </li>
             <li>
               <a href="Hamburgare.html"
-                ><img src="burger.png" alt="hamburare" width="50"
+                ><img src="burger.png" alt="hamburare" width="30"
               /></a>
             </li>
             <li>
               <a href="Vegetariskt.html"
-                ><img src="vegetable.png" alt="bild på grönsak" width="50"
+                ><img src="vegetable.png" alt="bild på grönsak" width="30"
               /></a>
             </li>
           </ul>
@@ -56,38 +90,6 @@
       </label>
     </div>
 
-    <div class="burger-menu">
-      <label class="nav-area">
-        ☰
-        <input class="nav-toggle" type="checkbox" />
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html"><i class="fas fa-house-user"></i></a>
-            </li>
-            <p class="Ord">Startsida</p>
-            <li>
-              <a href="Pizza.html"
-                ><img src="pizza.png" alt="bild på piza" width="50"
-              /></a>
-            </li>
-            <p class="Ord">Pizza</p>
-            <li>
-              <a href="Hamburgare.html"
-                ><img src="burger.png" alt="hamburare" width="50"
-              /></a>
-            </li>
-            <p class="Ord">Hamburgare</p>
-            <li>
-              <a href="Vegetariskt.html"
-                ><img src="vegetable.png" alt="bild på grönsak" width="50"
-              /></a>
-            </li>
-            <p class="Ord">Vegetariskt</p>
-          </ul>
-        </nav>
-      </label>
-    </div>
     <div class="horizontal-menu">
       <ul>
         <div class="startsidaicon">
@@ -153,13 +155,13 @@
           <img
             src="klassisk-spaghetti-carbonara.jpg"
             alt="Bild på en klassisk spaghetti carbonara"
-            width="300"
+            width="400"
           />
           <p>100 kr</p>
           <p>En klassiskt spaghetti carbonara finns i stor och liten portion</p>
         </div>
         <div class="pizza-card">
-          <img src="lasagne.jpg" alt="Bild på lasagne" width="300" />
+          <img src="lasagne.jpg" alt="Bild på lasagne" width="400" />
           <p>100 kr</p>
           <p>
             En portion lasagne. Lorem ipsum dolor sit amet consectetur
@@ -168,7 +170,7 @@
           </p>
         </div>
         <div class="pizza-card">
-          <img src="mac'n'cheese.jpg" alt="Bild på mac'n'cheese" width="300" />
+          <img src="mac'n'cheese.jpg" alt="Bild på mac'n'cheese" width="400" />
           <p>100 kr</p>
           <p>En portion med mac 'n' cheese</p>
         </div>
@@ -176,7 +178,7 @@
           <img
             src="spaghetti-bolognese.jpg"
             alt="Bild på en spaghetti bolognese"
-            width="300"
+            width="400"
           />
           <p>100 kr</p>
           <p>
