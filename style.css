@@ -136,7 +136,7 @@ nav {
   width: 15vw;
   height: 100vh;
   transition: 600ms ease-in-out;
-  background-color: black;
+  background-color: #262626;
   box-shadow: 0 1rem 1rem var(--dark);
 }
 
